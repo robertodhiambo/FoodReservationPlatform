@@ -19,9 +19,9 @@ namespace FoodReservation.User
         {
             if (!IsPostBack)
             {
-                if (Session["grandTotal"] != null)
+                if (Session["grandTotalPrice"] != null)
                 {
-                    decimal total = Convert.ToDecimal(Session["grandTotal"]);
+                    decimal total = Convert.ToDecimal(Session["grandTotalPrice"]);
                     txtAmount.Text = Math.Round(total, 0).ToString();  //Removes the decimal places
                     txtAmount.ReadOnly = true;
                 }

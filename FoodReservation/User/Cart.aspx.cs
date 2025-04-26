@@ -152,7 +152,7 @@ namespace FoodReservation.User
 
                 if ( isTrue )
                 {
-                    Response.Redirect ( "Payment.aspx" );
+                    Response.Redirect ( "PaymentModel.aspx" );
                 }
                 else
                 {
